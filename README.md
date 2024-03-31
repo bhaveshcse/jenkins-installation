@@ -1,4 +1,6 @@
 ## Jenkins installation on EC2 (Ubuntu)
+Choose EC2 instance as t2.medium 
+
 # Installation of Java
 Jenkins requires Java to run, yet not all Linux distributions include Java by default. Additionally, not all Java versions are compatible with Jenkins.
 There are multiple Java implementations which you can use. OpenJDK is the most popular one at the moment, we will use it in this guide.
@@ -33,4 +35,8 @@ sudo apt-get install -y jenkins
 # Edit inbound rules in security group of EC2 
 Allow traffic on port 8080
 
+# Unlock Jenkins
+```bash
+$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 Create first username and password for jenkins and access.
