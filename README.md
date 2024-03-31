@@ -22,4 +22,4 @@ sudo apt-get install -y jenkins
 # Edit inbound rules in security group of EC2 
 Allow traffic on port 8080
 
-Now, you may access Jenkins on http://<public ip address>:8080/
+Now, you may access Jenkins on http://<<public ip address>>:8080/
